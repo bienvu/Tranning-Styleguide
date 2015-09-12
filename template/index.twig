@@ -20,6 +20,9 @@
         'id':'demo',
         'name': 'Demo'
       },
+      { 'id':'boxhero',
+        'name': 'Box Hero'
+      },
       {
         'id':'box-logo',
         'name': 'Box Logo'
@@ -34,7 +37,7 @@
       { 'id':'box-teaser',
         'name': 'Box Teaser'
       }
-    ] %} 
+    ] %}
     {% for component in list_components %}
       <div class="component--item" id="{{component.id}}">
         <h2 class="component--title">{{ loop.index }}. {{ component.name }}</h2>
