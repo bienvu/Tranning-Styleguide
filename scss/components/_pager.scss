@@ -1,0 +1,27 @@
+//style pager
+.pager {
+  display: inline-block;
+  height: auto;
+  text-align: center;
+  width: 100%;
+
+  &-item {
+    float: none !important;
+    display: inline-block;
+  }
+
+  &-item.active a{
+    background-color: $green;
+    color: $white;
+  }
+
+  .prev {
+    float: left !important;
+    width: auto;
+  }
+
+  .next {
+    float: right;
+    width: auto;
+  }
+}
