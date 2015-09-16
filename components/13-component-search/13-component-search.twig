@@ -1,0 +1,32 @@
+{# box_img.twig #}
+{% block boxsearch %}
+  {% set search = [
+    {
+      "lable": "You have searched for:",
+      "placeholder": "Science",
+
+    },
+    {
+
+      "lable": "search all bins:",
+      "placeholder": "keyword",
+    }
+  ]%}
+
+
+  {% for iterm in search %}
+    <form accept-charset="UTF-8" id="search-block-form" method="post" action="#" class="form-search content-search">
+    <div>
+      <div>
+        <div class="input-group">
+          <div class="lable-search">{{iterm.lable}}</div>
+          <input type="text" maxlength="128" size="15" value="" name="search_block_form" id="edit-search-block-form--2" class="form-control form-text" placeholder="{{iterm.placeholder}}" title="Enter the terms you wish to search for.">
+          <span class="input-group-btn">
+            <button class="btn btn-default icon-search" type="submit"></button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </form>
+  {% endfor %}
+{% endblock %}

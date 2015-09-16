@@ -2224,6 +2224,29 @@ iframe {
   width: auto !important;
 }
 
+.pager {
+  display: inline-block;
+  height: auto;
+  text-align: center;
+  width: 100%;
+}
+.pager-item {
+  float: none !important;
+  display: inline-block;
+}
+.pager-item.active a {
+  background-color: #16a085;
+  color: #fff;
+}
+.pager .prev {
+  float: left !important;
+  width: auto;
+}
+.pager .next {
+  float: right;
+  width: auto;
+}
+
 .horizontal-tabs .tab-horizontal-mobile {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
