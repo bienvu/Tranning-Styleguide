@@ -1,0 +1,51 @@
+//styele box search
+.form-search {
+  margin-bottom: rem(30px);
+
+  .lable-search {
+    color: $grey-5f;
+    font-size: rem(18px);
+    font-weight: normal;
+    text-align: center;
+    text-transform: capitalize;
+
+    @include breakpoint($tablet) {
+      display: table-cell;
+      vertical-align: middle;
+
+      &:after {
+        content: ":";
+      }
+    }
+
+  }
+
+  .input-group {
+    position: relative;
+
+    @include breakpoint($tablet) {
+      display: table-cell;
+      max-width: 100%;
+      padding-left: rem(10px);
+      vertical-align: middle;
+      width: rem(578px);
+    }
+
+    .input-group-btn {
+      margin-top: rem(-9px);
+      position: absolute;
+      right: 0;
+      top: 50%;
+
+      .icon-search {
+        background-color: transparent;
+        background-image: none;
+        border: medium none;
+
+        &:hover {
+          color:  $green;
+        }
+      }
+    }
+  }
+}
