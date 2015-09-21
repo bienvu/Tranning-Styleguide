@@ -287,12 +287,12 @@ textarea {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-chevron-thin-right:before, .testimonial-wrapper .testimonial-inner .owl-controls .owl-next:before {
-  content: "\e603";
+.icon-search:before {
+  content: "\e607";
 }
 
-.icon-chevron-thin-left:before, .testimonial-wrapper .testimonial-inner .owl-controls .owl-prev:before {
-  content: "\e604";
+.icon-checkmark:before {
+  content: "\e605";
 }
 
 .icon-star-empty:before {
@@ -301,6 +301,26 @@ textarea {
 
 .icon-star-full:before {
   content: "\e601";
+}
+
+.icon-arrow-right:before {
+  content: "\e606";
+}
+
+.icon-star-empty:before {
+  content: "\e600";
+}
+
+.icon-star-full:before {
+  content: "\e601";
+}
+
+.icon-chevron-thin-right:before, .testimonial-wrapper .testimonial-inner .owl-controls .owl-next:before {
+  content: "\e603";
+}
+
+.icon-chevron-thin-left:before, .testimonial-wrapper .testimonial-inner .owl-controls .owl-prev:before {
+  content: "\e604";
 }
 
 .icon-star:before {
@@ -2167,6 +2187,52 @@ iframe {
   max-width: 100%;
   overflow: inherit;
   width: auto !important;
+}
+
+.form-search {
+  margin-bottom: 1.875rem;
+}
+.form-search .lable-search {
+  color: #5f574f;
+  font-size: 1.125rem;
+  font-weight: normal;
+  text-align: center;
+  text-transform: capitalize;
+}
+@media (min-width: 48em) {
+  .form-search .lable-search {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .form-search .lable-search:after {
+    content: ":";
+  }
+}
+.form-search .input-group {
+  position: relative;
+}
+@media (min-width: 48em) {
+  .form-search .input-group {
+    display: table-cell;
+    max-width: 100%;
+    padding-left: 0.625rem;
+    vertical-align: middle;
+    width: 36.125rem;
+  }
+}
+.form-search .input-group .input-group-btn {
+  margin-top: -0.5625rem;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+.form-search .input-group .input-group-btn .icon-search {
+  background-color: transparent;
+  background-image: none;
+  border: medium none;
+}
+.form-search .input-group .input-group-btn .icon-search:hover {
+  color: #16a085;
 }
 
 .horizontal-tabs .tab-horizontal-mobile {
