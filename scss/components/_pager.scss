@@ -1,0 +1,109 @@
+//style pager
+.pager {
+  display: inline-block;
+  height: auto;
+  text-align: center;
+  width: 100%;
+
+  li.pager-item {
+    display: none;
+    float: none;
+
+    @include breakpoint($tablet) {
+      display: inline-block;
+    }
+  }
+
+  li.pager-item.active a{
+    background-color: $green;
+    color: $white;
+  }
+
+  .prev {
+    float: left;
+    position: relative;
+    width: auto;
+
+    a {
+      padding-left: rem(15px);
+      position: relative;
+
+      &:before {
+        @include transform (rotate(45deg));
+        border-left: rem(2px) solid $grey-5f;
+        content: "";
+        height: rem(18px);
+        left: 0;
+        position: absolute;
+        top: rem(1px);
+        width: rem(2px);
+      }
+
+      &:after {
+        @include border-radius(0);
+        @include transform (rotate(-45deg));
+        border-left: rem(2px) solid $grey-5f;
+        bottom: 0;
+        content: "";
+        height: rem(18px);
+        left: 0;
+        position: absolute;
+        width: rem(2px);
+      }
+
+      &:hover {
+        background-color: transparent;
+        color: $green;
+      }
+    }
+
+    a:hover:before,
+    a:hover:after {
+      border-left-color: $green;
+    }
+  }
+
+  .next {
+    float: right;
+    position: relative;
+    width: auto;
+
+    a {
+      padding-right: rem(15px);
+      position: relative;
+
+      &:before {
+        @include transform (rotate(-45deg));
+        border-left: rem(2px) solid $grey-5f;
+        content: "";
+        height: rem(18px);
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: rem(2px);
+      }
+
+      &:after {
+        @include border-radius(0);
+        @include transform (rotate(45deg));
+        border-left: rem(2px) solid $grey-5f;
+        bottom: rem(-1px);
+        content: "";
+        height: rem(18px);
+        position: absolute;
+        right: 0;
+        width: rem(2px);
+      }
+
+      &:hover {
+        background-color: transparent;
+        color: $green;
+      }
+    }
+
+    a:hover:before,
+    a:hover:after{
+      border-left-color: $green;
+    }
+  }
+}
