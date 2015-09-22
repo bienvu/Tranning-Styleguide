@@ -1296,6 +1296,7 @@ iframe {
   margin: 0 auto;
   overflow: inherit;
 }
+<<<<<<< HEAD
 .modal-content-agree-sign-up .popups-container:before,
 .modal-content-sign-up .popups-container:before,
 .modal-content-sign-in .popups-container:before {
@@ -1339,8 +1340,26 @@ iframe {
 }
 .form-sign-up .form-item-field-role-ref-und .form-checkboxes .form-type-checkbox {
   margin-bottom: 0.3125rem;
+=======
+.pager li.pager-item {
+  display: none;
+  float: none;
+}
+@media (min-width: 48em) {
+  .pager li.pager-item {
+    display: inline-block;
+  }
+}
+.pager li.pager-item.active a {
+  background-color: #16a085;
+  color: #fff;
+}
+.pager .prev {
+  float: left;
+>>>>>>> 18-pager commit 22/09/2015
   position: relative;
 }
+<<<<<<< HEAD
 .form-sign-up .form-item-field-role-ref-und .form-checkboxes .form-type-checkbox label,
 .form-sign-up .form-item-field-role-ref-und .form-checkboxes .form-type-checkbox .form-checkbox {
   display: inline;
@@ -1364,6 +1383,40 @@ iframe {
   position: absolute;
   visibility: hidden;
   width: 0.9375rem;
+=======
+.pager .prev a {
+  padding-left: 0.9375rem;
+  position: relative;
+}
+.pager .prev a:before {
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-left: 0.125rem solid #5f574f;
+  content: "";
+  height: 1.125rem;
+  left: 0;
+  position: absolute;
+  top: 0.0625rem;
+  width: 0.125rem;
+}
+.pager .prev a:after {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border-left: 0.125rem solid #5f574f;
+  bottom: 0;
+  content: "";
+  height: 1.125rem;
+  left: 0;
+  position: absolute;
+  width: 0.125rem;
+>>>>>>> 18-pager commit 22/09/2015
 }
 .form-sign-up .form-item-field-role-ref-und .form-checkboxes .form-type-checkbox input + label {
   position: relative;
@@ -1377,6 +1430,7 @@ iframe {
   font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif;
   color: #16a085;
 }
+<<<<<<< HEAD
 .form-sign-up .form-item-field-role-ref-und .form-checkboxes .form-type-checkbox input[type=radio]:checked + label:before, .form-sign-up .form-item-field-role-ref-und .form-checkboxes .form-type-checkbox input[type=checkbox]:checked + label:before {
   border: 2px solid #16a085;
   left: -1px;
@@ -2324,6 +2378,46 @@ iframe {
   content: "";
   height: 1.125rem;
   position: absolute;
+=======
+.pager .prev a:hover:before, .pager .prev a:hover:after {
+  border-left-color: #16a085;
+}
+.pager .next {
+  float: right;
+  position: relative;
+  width: auto;
+}
+.pager .next a {
+  padding-right: 0.9375rem;
+  position: relative;
+}
+.pager .next a:before {
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border-left: 0.125rem solid #5f574f;
+  content: "";
+  height: 1.125rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0.125rem;
+}
+.pager .next a:after {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-left: 0.125rem solid #5f574f;
+  bottom: -0.0625rem;
+  content: "";
+  height: 1.125rem;
+  position: absolute;
+>>>>>>> 18-pager commit 22/09/2015
   right: 0;
   width: 0.125rem;
 }
@@ -2331,8 +2425,12 @@ iframe {
   background-color: transparent;
   color: #16a085;
 }
+<<<<<<< HEAD
 .pager .next a:hover:before,
 .pager .next a:hover:after {
+=======
+.pager .next a:hover:before, .pager .next a:hover:after {
+>>>>>>> 18-pager commit 22/09/2015
   border-left-color: #16a085;
 }
 
