@@ -2230,21 +2230,110 @@ iframe {
   text-align: center;
   width: 100%;
 }
-.pager-item {
-  float: none !important;
-  display: inline-block;
+.pager li.pager-item {
+  display: none;
+  float: none;
 }
-.pager-item.active a {
+@media (min-width: 48em) {
+  .pager li.pager-item {
+    display: inline-block;
+  }
+}
+.pager li.pager-item.active a {
   background-color: #16a085;
   color: #fff;
 }
 .pager .prev {
-  float: left !important;
+  float: left;
+  position: relative;
   width: auto;
+}
+.pager .prev a {
+  padding-left: 0.9375rem;
+  position: relative;
+}
+.pager .prev a:before {
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-left: 0.125rem solid #5f574f;
+  content: "";
+  height: 1.125rem;
+  left: 0;
+  position: absolute;
+  top: 0.0625rem;
+  width: 0.125rem;
+}
+.pager .prev a:after {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border-left: 0.125rem solid #5f574f;
+  bottom: 0;
+  content: "";
+  height: 1.125rem;
+  left: 0;
+  position: absolute;
+  width: 0.125rem;
+}
+.pager .prev a:hover {
+  background-color: transparent;
+  color: #16a085;
+}
+.pager .prev a:hover:before,
+.pager .prev a:hover:after {
+  border-left-color: #16a085;
 }
 .pager .next {
   float: right;
+  position: relative;
   width: auto;
+}
+.pager .next a {
+  padding-right: 0.9375rem;
+  position: relative;
+}
+.pager .next a:before {
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border-left: 0.125rem solid #5f574f;
+  content: "";
+  height: 1.125rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0.125rem;
+}
+.pager .next a:after {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-left: 0.125rem solid #5f574f;
+  bottom: -0.0625rem;
+  content: "";
+  height: 1.125rem;
+  position: absolute;
+  right: 0;
+  width: 0.125rem;
+}
+.pager .next a:hover {
+  background-color: transparent;
+  color: #16a085;
+}
+.pager .next a:hover:before,
+.pager .next a:hover:after {
+  border-left-color: #16a085;
 }
 
 .horizontal-tabs .tab-horizontal-mobile {
