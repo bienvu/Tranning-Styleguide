@@ -1183,7 +1183,7 @@ iframe {
 }
 .box-save .button-save::before {
   color: #ffba00;
-  margin-right: 5px;
+  margin-right: 0.3125rem;
 }
 .box-save .button-save:hover {
   background-color: #dfdfdf;
