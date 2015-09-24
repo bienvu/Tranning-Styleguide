@@ -1,0 +1,21 @@
+// style box save
+.box-save {
+  text-align: center;
+
+  .button-save {
+    @include border-radius(4px);
+    background-color: $gray-f0;
+    border: medium none;
+    font-size: rem(16px);
+    padding: rem(15px 30px);
+
+    &::before {
+      color: $ogranger;
+      margin-right: rem(5px);
+    }
+
+    &:hover {
+      background-color: $grey-df;
+    }
+  }
+}

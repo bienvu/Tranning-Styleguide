@@ -1169,6 +1169,26 @@ iframe {
   margin-bottom: 0;
 }
 
+.box-save {
+  text-align: center;
+}
+.box-save .button-save {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  border: medium none;
+  font-size: 1rem;
+  padding: 0.9375rem 1.875rem;
+}
+.box-save .button-save::before {
+  color: #ffba00;
+  margin-right: 0.3125rem;
+}
+.box-save .button-save:hover {
+  background-color: #dfdfdf;
+}
+
 .breadcrumd {
   display: inline-block;
   width: 100%;
