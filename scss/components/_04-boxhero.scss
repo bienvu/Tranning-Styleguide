@@ -149,6 +149,9 @@
       position: absolute;
       max-width: rem(1600px);
       right: 0;
+      @include breakpoint($desktop-small) {
+        max-width: 100%;
+      }
     }
   }
 

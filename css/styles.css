@@ -633,6 +633,11 @@ iframe {
   max-width: 100rem;
   right: 0;
 }
+@media (min-width: 60em) {
+  .box-hero--more .box-hero__image img {
+    max-width: 100%;
+  }
+}
 .box-hero--more .box-hero__group-content {
   position: relative;
   top: auto;
