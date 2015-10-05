@@ -1,0 +1,38 @@
+
+{% block box_follow %}
+  {% set boxfollow = [
+    {
+     'img'     : '<img src="../../images/boxhero-about-page.jpg" alt="image box hero about">',
+     'Twitter' : '<a class="icon-twitter" href="https://twitter.com">@stanford_scale</a>',
+     'facebook' : '<a class="icon-facebook" href="https://www.facebook.com/">/StanfordSCALE</a>'
+    },
+    {
+     'img'     : '<img src="../../images/boxhero-about-page.jpg" alt="image box hero about">',
+     'Twitter' : '<a class="icon-twitter" href="https://twitter.com">@scope_stanford</a>',
+     'facebook' : '<a class="icon-facebook" href="https://www.facebook.com/">/SCOPE.Stanford</a>'
+    },
+    {
+     'img'     : '<img src="../../images/boxhero-about-page.jpg" alt="image box hero about">',
+     'Twitter' : '<a class="icon-twitter" href="https://twitter.com">@ccsso</a>',
+     'facebook' : '<a class="icon-facebook" href="https://www.facebook.com/">/SCOPE.Stanford</a>'
+    }
+  ] %}
+
+<div class="box-follow-us">
+  {% for item in boxfollow %}
+    <div class="box-follow-us__item">
+      <div class="box-follow-us__item__image">
+        {{item.img}}
+      </div>
+      <div class="box-follow-us__item-social">
+        {{item.Twitter}}
+        {{item.facebook}}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+{% endblock %}
+
+
+
