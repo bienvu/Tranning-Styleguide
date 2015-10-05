@@ -906,6 +906,56 @@ iframe {
   margin-bottom: 0;
 }
 
+.box-sign-up .pane-title {
+  font-family: 'source_sans_prolight', Helvetica, Arial, sans-serif;
+  color: #5f574f;
+  margin-bottom: 1.875rem;
+  text-align: center;
+}
+@media (min-width: 48em) {
+  .box-sign-up .pane-title {
+    margin-bottom: 4.1875rem;
+  }
+}
+.box-sign-up .box-sign-up__form {
+  padding: 0 0 1.875rem;
+}
+@media (min-width: 60em) {
+  .box-sign-up .box-sign-up__form {
+    padding: 0 8.75rem 3.125rem;
+  }
+}
+.box-sign-up .box-sign-up__form .box-sign-up__name, .box-sign-up .box-sign-up__form .box-sign-up__surename, .box-sign-up .box-sign-up__form .box-sign-up__email {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  margin-bottom: 1.25rem;
+  padding: 0 0.75rem;
+  width: 100%;
+}
+@media (min-width: 48em) {
+  .box-sign-up .box-sign-up__form .box-sign-up__name, .box-sign-up .box-sign-up__form .box-sign-up__surename, .box-sign-up .box-sign-up__form .box-sign-up__email {
+    margin-bottom: 2.3125rem;
+    width: 33.333%;
+  }
+}
+.box-sign-up .box-sign-up__form .form-text {
+  height: 3.25rem;
+  padding: 1rem 1.25rem;
+}
+.box-sign-up .box-sign-up__form .form-actions {
+  clear: both;
+  text-align: center;
+}
+.box-sign-up .box-sign-up__form .form-actions .form-submit {
+  font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif;
+  font-size: 1.25rem;
+  height: 3.125rem;
+  padding: 0.625rem 1.875rem;
+  width: 17rem;
+}
+
 .box-tag {
   display: inline-block;
   margin-bottom: 1.875rem;
@@ -2472,7 +2522,7 @@ iframe {
   background-color: #A9A9A9;
 }
 .share-this ul li a.icon-envelope-o:hover {
-  background-color: #909090;
+  background-color: #8f8f8f;
 }
 .share-this ul li a:before {
   font-size: 1rem;
@@ -2835,6 +2885,24 @@ iframe {
 .testimonial-wrapper .testimonial-inner .owl-controls .owl-next {
   right: 0;
   margin-right: 2.5rem;
+}
+
+.box-intro {
+  margin-bottom: 3.125rem;
+  text-align: center;
+}
+.box-intro .box-intro_content {
+  line-height: 1.9;
+}
+.box-intro .box-intro_content .morecontent span {
+  display: none;
+}
+.box-intro .box-intro_content .morelink:hover {
+  font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif;
+  color: #5f574f;
+  color: #16a085;
+  display: block;
+  margin-bottom: 1.875rem;
 }
 
 /* No files to import found in vendors/** */
