@@ -1,0 +1,56 @@
+.box-follow-us {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+
+  &__item {
+    @include breakpoint($desktop-small) {
+      @include span(last 4 of 12);
+      float: left;
+      margin-bottom: rem(25px);
+    }
+
+    &__image {
+      display: table;
+      height: 54px;
+      margin: 0 auto 30px;
+
+      &__content {
+        display: table-cell;
+        vertical-align: bottom;
+      }
+
+      img {
+        margin: 0 auto;
+      }
+    }
+
+    &__social {
+
+      a{
+        @include source_sans_prosemibold;
+
+        &:before {
+          @include icomoon;
+          font-size: rem(26px);
+        }
+      }
+
+      .icon-twitter {
+        margin-right: rem(40px);
+
+        &:before {
+          color: $blue-2a;
+        }
+      }
+
+      .icon-facebook2 {
+
+        &:before {
+          color: $blue-3a;
+        }
+      }
+    }
+  }
+}
+

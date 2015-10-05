@@ -2,19 +2,19 @@
 {% block box_follow %}
   {% set boxfollow = [
     {
-     'img'     : '<img src="../../images/boxhero-about-page.jpg" alt="image box hero about">',
+     'img'     : '<img src="../../images/box-follow-img.png" alt="image box follow us">',
      'Twitter' : '<a class="icon-twitter" href="https://twitter.com">@stanford_scale</a>',
-     'facebook' : '<a class="icon-facebook" href="https://www.facebook.com/">/StanfordSCALE</a>'
+     'facebook' : '<a class="icon-facebook2" href="https://www.facebook.com/">/StanfordSCALE</a>'
     },
     {
-     'img'     : '<img src="../../images/boxhero-about-page.jpg" alt="image box hero about">',
+     'img'     : '<img src="../../images/box-follow-img1.png" alt="image box follow us">',
      'Twitter' : '<a class="icon-twitter" href="https://twitter.com">@scope_stanford</a>',
-     'facebook' : '<a class="icon-facebook" href="https://www.facebook.com/">/SCOPE.Stanford</a>'
+     'facebook' : '<a class="icon-facebook2" href="https://www.facebook.com/">/SCOPE.Stanford</a>'
     },
     {
-     'img'     : '<img src="../../images/boxhero-about-page.jpg" alt="image box hero about">',
+     'img'     : '<img src="../../images/boxfollow-img2.png" alt="image box follow us">',
      'Twitter' : '<a class="icon-twitter" href="https://twitter.com">@ccsso</a>',
-     'facebook' : '<a class="icon-facebook" href="https://www.facebook.com/">/SCOPE.Stanford</a>'
+     'facebook' : '<a class="icon-facebook2" href="https://www.facebook.com/">/SCOPE.Stanford</a>'
     }
   ] %}
 
@@ -22,9 +22,11 @@
   {% for item in boxfollow %}
     <div class="box-follow-us__item">
       <div class="box-follow-us__item__image">
-        {{item.img}}
+        <div class="box-follow-us__item__image__content">
+          {{item.img}}
+        </div>
       </div>
-      <div class="box-follow-us__item-social">
+      <div class="box-follow-us__item__social">
         {{item.Twitter}}
         {{item.facebook}}
       </div>

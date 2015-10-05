@@ -719,6 +719,49 @@ iframe {
   background-image: url("/img/2.png");
 }
 
+.box-follow-us {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+@media (min-width: 60em) {
+  .box-follow-us__item {
+    width: 31.62393%;
+    float: right;
+    margin-right: 0;
+    float: left;
+    margin-bottom: 1.5625rem;
+  }
+}
+.box-follow-us__item__image {
+  display: table;
+  height: 54px;
+  margin: 0 auto 30px;
+}
+.box-follow-us__item__image__content {
+  display: table-cell;
+  vertical-align: bottom;
+}
+.box-follow-us__item__image img {
+  margin: 0 auto;
+}
+.box-follow-us__item__social a {
+  font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif;
+}
+.box-follow-us__item__social a:before {
+  font-family: 'icomoon';
+  font-size: 1.625rem;
+}
+.box-follow-us__item__social .icon-twitter {
+  margin-right: 2.5rem;
+}
+.box-follow-us__item__social .icon-twitter:before {
+  color: #2aa9de;
+}
+.box-follow-us__item__social .icon-facebook2:before {
+  color: #3a5998;
+}
+
 #box_img .component--demo {
   display: inline-block;
 }
