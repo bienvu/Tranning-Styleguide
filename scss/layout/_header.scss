@@ -1,7 +1,7 @@
 // Styles for header.
 
 #header {
-  padding: 37px 0 42px;
+  padding: rem(47px 0 40px);
 }
 
 .branding {
@@ -16,11 +16,11 @@
 .region-header {
   @include box-sizing(border-box);
   @include transition(left,0.5s);
-  background: #f2f2f2;
+  background: $grey-f2;
   display: inline-block;
   float: right;
   left: -300px;
-  padding: 3px 0;
+  padding: rem(3px 0);
   position: fixed;
   top: 90px;
   width: 300px;
@@ -28,7 +28,7 @@
   @include breakpoint($desktop-wide) { 
     background: none;
     float: none;
-    padding: 3px 0 3px 23px;
+    padding: rem(3px 0 3px 23px);
     position: inherit;
     width: 81.5%;
   }
@@ -83,7 +83,7 @@
   .main-menu {
     list-style: none;
     margin: 0;
-    padding: 18px 0 14px 18px;
+    padding: rem(18px 0 14px 18px);
     position: relative;
 
     @media (max-width: 500px) {
@@ -94,8 +94,9 @@
 
     li {
       a {
+        @include source_sans_prosemibold;
         color: #000000;
-        font-size: 24px;
+        font-size: rem(24px);
 
         @include breakpoint($desktop-wide) {
           color: #333333;
@@ -159,7 +160,7 @@
           display: none;
           left: 30px;
           list-style: none;
-          padding: 10px 0;
+          padding: rem(10px 0);
           position: absolute;
           top: 53px;
           width: 300px;
@@ -175,8 +176,8 @@
 
             li a {
               color: #000000;
-              font-size: 18px;
-              padding: 12px 27px;
+              font-size: rem(18px);
+              padding: rem(12px 27px);
 
               &:hover {
                 background: none;
@@ -189,8 +190,8 @@
             a {
               color: #ffffff;
               display: block;
-              font-size: 15px;
-              padding: 10px 20px;
+              font-size: rem(15px);
+              padding: rem(10px 20px);
 
               &:hover {
                 background: #149077;
@@ -216,11 +217,11 @@
       }
 
       > a {
-        padding: 12px 27px;
+        padding: rem(12px 27px);
         display: block;
 
         @include breakpoint($desktop-wide) {
-          padding: 16px 13px;
+          padding: rem(16px 13px);
           display: inline;
         }
       }
@@ -245,9 +246,9 @@
     color: #fff;
     cursor: pointer;
     display: inline-block;
-    font-size: 18px;
+    font-size: rem(18px);
     margin-left: 0;
-    padding: 12px 40px;
+    padding: rem(12px 40px);
     text-decoration: none;
     width: 49.8%;
     

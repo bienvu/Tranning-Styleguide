@@ -1,12 +1,12 @@
 // Styles for footer.
 .footer {
   @include box-sizing(border-box);
-  color: #5f574f;
-  font-size: 14px;
-  padding: 63px 20px 36px;
+  color: $grey-5f;
+  font-size: rem(14px);
+  padding: rem(63px 20px 36px);
 
   @include breakpoint($desktop-wide) {
-    padding: 63px 0 36px;
+    padding: rem(63px 0 36px);
   }
 }
 
@@ -44,11 +44,11 @@
         margin-left: 40px;
       }
       a {
-        color: #5f574f;
+        color: $grey-5f;
         text-decoration: none;
         
         &:hover {
-          color: #16a085;
+          color: $color-links;
         }
       }
 

@@ -40,7 +40,7 @@
 
   .box-img__image {
     @include border-radius(100%);
-    background: #f4f3ef;
+    background: $grey-f4;
     display: inline-block;
     height: rem(85px);
     margin-bottom: rem(16px);
@@ -95,6 +95,6 @@
 
 .box-img--wide {
   .box-img__image {
-    background: #ffffff;
+    background: $white;
   }
 }
