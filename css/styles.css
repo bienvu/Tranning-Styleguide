@@ -633,6 +633,11 @@ iframe {
   max-width: 100rem;
   right: 0;
 }
+@media (min-width: 60em) {
+  .box-hero--more .box-hero__image img {
+    max-width: 100%;
+  }
+}
 .box-hero--more .box-hero__group-content {
   position: relative;
   top: auto;
@@ -2553,7 +2558,7 @@ iframe {
   background-color: #A9A9A9;
 }
 .share-this ul li a.icon-envelope-o:hover {
-  background-color: #8f8f8f;
+  background-color: #909090;
 }
 .share-this ul li a:before {
   font-size: 1rem;
